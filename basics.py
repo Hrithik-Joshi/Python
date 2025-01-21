@@ -16,6 +16,8 @@ coordinates = tuple((1,2))
 
 #Dictionary
 person = {"name": "Alice", "age": 25}
+for key, value in person.items():
+    print(key,value)
 
 #Booleans
 is_student = False
@@ -42,14 +44,31 @@ for i in range(3,30,3):
     print(i)  
     
 #user input
-num = int(input("Enter a num:"))
+# num = int(input("Enter a num:"))
 
-if num > 1:
-    for i in range(2, int(num**0.5)+1):
-        if num%i == 0:
-            print(f"{num} is not a prime number")
-            break
-    else:
-        print(f"{num} is a prime number")
-else:
-    print(f"{num} is a prime number")
+# if num > 1:
+#     for i in range(2, int(num**0.5)+1):
+#         if num%i == 0:
+#             print(f"{num} is not a prime number")
+#             break
+#     else:
+#         print(f"{num} is a prime number")
+# else:
+#     print(f"{num} is a prime number")
+    
+
+#functions
+def my_func(a):
+    print(a)
+my_func(5)
+
+#Positional- Only Argument
+def func1(a, /):
+    print(a)
+func1(3)
+
+#Keyword only args
+def func2(*,a,b):
+    print(a+b)
+func2(a=1,b=2)
+
