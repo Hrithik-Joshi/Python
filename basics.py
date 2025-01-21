@@ -44,17 +44,17 @@ for i in range(3,30,3):
     print(i)  
     
 #user input
-# num = int(input("Enter a num:"))
+num = int(input("Enter a num:"))
 
-# if num > 1:
-#     for i in range(2, int(num**0.5)+1):
-#         if num%i == 0:
-#             print(f"{num} is not a prime number")
-#             break
-#     else:
-#         print(f"{num} is a prime number")
-# else:
-#     print(f"{num} is a prime number")
+if num > 1:
+    for i in range(2, int(num**0.5)+1):
+        if num%i == 0:
+            print(f"{num} is not a prime number")
+            break
+    else:
+        print(f"{num} is a prime number")
+else:
+    print(f"{num} is a prime number")
     
 
 #functions
@@ -72,3 +72,6 @@ def func2(*,a,b):
     print(a+b)
 func2(a=1,b=2)
 
+#split
+word = "hello, how are you"
+print(word.split(","))
