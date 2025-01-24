@@ -28,3 +28,19 @@ print(dog1.name)     # (Updated instance variable)
 Dog.species = "Feline"
 print(dog1.species)  # (Updated class variable)
 print(dog2.species)
+
+#Single Inheritance
+class Labrador(Dog):
+    def sound(self):
+        print("Labrador woof")
+lab = Labrador(dog2.name, dog2.age)
+lab.display_name()
+lab.sound()
+
+#Multilevel Inheritance
+class GuideDog(Labrador):
+    def guide(self):
+        print(f"{self.name}Guides the way!")
+guide_dog = GuideDog("Max",2)
+guide_dog.display_name()
+guide_dog.guide()
