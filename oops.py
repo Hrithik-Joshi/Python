@@ -44,3 +44,16 @@ class GuideDog(Labrador):
 guide_dog = GuideDog("Max",2)
 guide_dog.display_name()
 guide_dog.guide()
+
+# Multiple Inheritance
+class Friendly:
+    def greet(self):
+        print("Friendly!")
+
+class GoldenRetriever(Dog, Friendly):
+    def sound(self):
+        print("Golden Retriever Barks")
+retriever = GoldenRetriever("Charlie",10)
+retriever.display_name()
+retriever.greet()
+retriever.sound()
