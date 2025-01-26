@@ -44,7 +44,7 @@ for i in range(3,30,3):
     print(i)  
     
 #user input
-num = int(input("Enter a num:"))
+# num = int(input("Enter a num:"))
 
 if num > 1:
     for i in range(2, int(num**0.5)+1):
